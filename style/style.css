@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: white;
-  min-height: 2000px;
+  min-height: 5000px;
 }
 
 .navbar {
@@ -144,17 +144,20 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.about {
+.about,
+.menu {
   padding: 7rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2,
+.menu h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 
-.about h2 span {
+.about h2 span,
+.menu h2 span {
   color: var(--primary);
 }
 
@@ -186,6 +189,42 @@ body {
   font-weight: 100;
   line-height: 1.6;
 }
+
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu p {
+  text-align: center;
+  margin: auto;
+  max-width: 30rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.menu .row .menu-card .menu-image {
+  width: 11rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.menu .row .menu-card .menu-title {
+  margin: 1rem auto 0.5rem;
+}
+
 /* media query */
 @media (max-width: 1366px) {
   html {
@@ -245,13 +284,17 @@ body {
     padding: 0;
   }
 
-  .about .row h3 {
+  .about .row .content h3 {
     margin-top: 1rem;
     font-size: 2rem;
   }
 
-  .about .row p {
+  .about .row .content p {
     font-size: 1.4rem;
+  }
+
+  .menu p {
+    font-size: 1.5rem;
   }
 }
 
