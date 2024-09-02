@@ -18,7 +18,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: white;
-  min-height: 5000px;
+  /* min-height: 5000px; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -273,6 +277,33 @@ body {
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .links {
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+footer .social a,
+footer .links a {
+  color: #fff;
+  margin: 0.5rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--bg);
 }
 
 /* media query */
