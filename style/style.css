@@ -306,6 +306,38 @@ footer .links a:hover {
   color: var(--bg);
 }
 
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--bg);
+  margin-right: 1.5rem;
+}
+
 /* media query */
 @media (max-width: 1366px) {
   html {
@@ -388,6 +420,11 @@ footer .links a:hover {
 
   .contact .row form {
     padding-top: 0;
+  }
+
+  .navbar .search-form {
+    right: 3rem;
+    width: 90%;
   }
 }
 
