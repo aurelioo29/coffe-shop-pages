@@ -150,13 +150,15 @@ html {
 
 .about,
 .menu,
-.contact {
+.contact,
+.product {
   padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
-.contact h2 {
+.contact h2,
+.product h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -164,7 +166,8 @@ html {
 
 .about h2 span,
 .menu h2 span,
-.contact h2 span {
+.contact h2 span,
+.product h2 span {
   color: var(--primary);
 }
 
@@ -198,12 +201,14 @@ html {
 }
 
 .menu h2,
-.contact h2 {
+.contact h2,
+.product h2 {
   margin-bottom: 1rem;
 }
 
 .menu p,
-.contact p {
+.contact p,
+.product p {
   text-align: center;
   margin: auto;
   max-width: 30rem;
@@ -336,6 +341,76 @@ footer .links a:hover {
   font-size: 1rem;
   color: var(--bg);
   margin-right: 1.5rem;
+}
+
+.product .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.product .product-card {
+  text-align: center;
+  border: 1px solid #818181;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.product .product-card .product-icon {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.product .product-icon a {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .product-icon a:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+.product .product-image {
+  padding: 1rem 0;
+}
+
+.product .product-image img {
+  width: 25rem;
+}
+
+.product .product-content h3 {
+  font-size: 2rem;
+}
+
+.product .product-star {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: var(--primary);
+}
+
+.product .product-star .full-star {
+  fill: var(--primary);
+}
+
+.product .product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.product .product-price span {
+  text-decoration: line-through;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 /* media query */
